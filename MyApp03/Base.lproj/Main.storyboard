@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYy-uV-TSc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="xXf-Fd-dgg">
+            <objects>
+                <viewController id="aYy-uV-TSc" customClass="WelcomeViewController" customModule="MyApp03" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u6V-5h-3B5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tfl-FY-gHc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1JZ-0q-HNk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFi-bE-AWb">
+                                <rect key="frame" x="-0.5" y="318" width="375" height="30"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jvG-gr-tgh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="guess-the-number-1012_3bc71.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wkj-Ps-Apl">
+                                <rect key="frame" x="-1" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wkj-Ps-Apl" firstAttribute="height" secondItem="1JZ-0q-HNk" secondAttribute="height" id="GEp-IQ-YBd"/>
+                            <constraint firstItem="Wkj-Ps-Apl" firstAttribute="width" secondItem="1JZ-0q-HNk" secondAttribute="width" id="QJM-KC-QL2"/>
+                            <constraint firstItem="HFi-bE-AWb" firstAttribute="width" secondItem="Wkj-Ps-Apl" secondAttribute="width" id="UQC-ei-xDy"/>
+                            <constraint firstItem="Wkj-Ps-Apl" firstAttribute="centerX" secondItem="1JZ-0q-HNk" secondAttribute="centerX" id="Vkd-bD-Of8"/>
+                            <constraint firstItem="Wkj-Ps-Apl" firstAttribute="centerY" secondItem="1JZ-0q-HNk" secondAttribute="centerY" id="aUb-eo-LPO"/>
+                            <constraint firstItem="HFi-bE-AWb" firstAttribute="centerY" secondItem="1JZ-0q-HNk" secondAttribute="centerY" id="cJL-z4-xiS"/>
+                            <constraint firstItem="HFi-bE-AWb" firstAttribute="centerX" secondItem="1JZ-0q-HNk" secondAttribute="centerX" id="vAr-BF-hd6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VvE-HQ-ZGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="18.440779610194905"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp03" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入數字" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="H3a-dg-Vwq">
+                                <rect key="frame" x="24" y="28" width="262.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="顯示結果" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SND-3B-gBT">
+                                <rect key="frame" x="24" y="66" width="327" height="21"/>
+                                <color key="backgroundColor" red="0.52735837673543906" green="0.83751324746903189" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xqu-2l-fMa">
+                                <rect key="frame" x="24" y="95" width="327" height="564"/>
+                                <color key="backgroundColor" red="1" green="0.99355879146358073" blue="0.62181109179436711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-DC-vN6">
+                                <rect key="frame" x="294" y="28" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.49812988367572508" blue="0.45428725784852408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="猜"/>
+                                <connections>
+                                    <action selector="btnGuess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUc-HP-URF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xqu-2l-fMa" secondAttribute="trailing" constant="8" id="9W5-Rf-YG8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xqu-2l-fMa" secondAttribute="bottom" constant="8" id="A5V-bA-7GC"/>
+                            <constraint firstItem="H3a-dg-Vwq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Dqd-yc-LXd"/>
+                            <constraint firstItem="Xqu-2l-fMa" firstAttribute="top" secondItem="SND-3B-gBT" secondAttribute="bottom" constant="8" id="JtP-Vk-eyQ"/>
+                            <constraint firstItem="H3a-dg-Vwq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="LVK-cs-PuP"/>
+                            <constraint firstItem="H3a-dg-Vwq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ta7-tN-0v9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SND-3B-gBT" secondAttribute="trailing" constant="8" id="UTP-Aw-wJp"/>
+                            <constraint firstItem="SND-3B-gBT" firstAttribute="top" secondItem="H3a-dg-Vwq" secondAttribute="bottom" constant="8" id="Zzp-ur-YIw"/>
+                            <constraint firstItem="Xqu-2l-fMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="lmz-tT-oUH"/>
+                            <constraint firstItem="SND-3B-gBT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="wdH-UN-FgF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelResult" destination="SND-3B-gBT" id="5LP-Vy-G3C"/>
+                        <outlet property="textHistory" destination="Xqu-2l-fMa" id="Cz0-Rp-SZj"/>
+                        <outlet property="textInput" destination="H3a-dg-Vwq" id="J3X-Hw-9uX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guess-the-number-1012_3bc71.png" width="480" height="480"/>
+    </resources>
+</document>
