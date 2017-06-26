@@ -20,6 +20,10 @@
 		291D0B0E1EFCAF6D00001DF4 /* VC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D0B0D1EFCAF6D00001DF4 /* VC4.swift */; };
 		291D0B101EFCC44A00001DF4 /* PainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D0B0F1EFCC44A00001DF4 /* PainterView.swift */; };
 		291D0B121EFCF8D500001DF4 /* PainterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D0B111EFCF8D500001DF4 /* PainterVC.swift */; };
+		2924F51F1F009B09007BB7B4 /* apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2924F51E1F009B09007BB7B4 /* apple2.png */; };
+		2924F5211F009CAA007BB7B4 /* testTouchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2924F5201F009CAA007BB7B4 /* testTouchVC.swift */; };
+		2924F5231F009DAA007BB7B4 /* TestTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2924F5221F009DAA007BB7B4 /* TestTouchView.swift */; };
+		2924F5431F00F0AF007BB7B4 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 2924F5421F00F0AF007BB7B4 /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		291D0B0D1EFCAF6D00001DF4 /* VC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC4.swift; sourceTree = "<group>"; };
 		291D0B0F1EFCC44A00001DF4 /* PainterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainterView.swift; sourceTree = "<group>"; };
 		291D0B111EFCF8D500001DF4 /* PainterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainterVC.swift; sourceTree = "<group>"; };
+		2924F51E1F009B09007BB7B4 /* apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple2.png; path = ../../../Downloads/apple2.png; sourceTree = "<group>"; };
+		2924F5201F009CAA007BB7B4 /* testTouchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testTouchVC.swift; sourceTree = "<group>"; };
+		2924F5221F009DAA007BB7B4 /* TestTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestTouchView.swift; path = ../TestTouchView.swift; sourceTree = "<group>"; };
+		2924F5421F00F0AF007BB7B4 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = ../../../Downloads/ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,8 @@
 				291D0B0D1EFCAF6D00001DF4 /* VC4.swift */,
 				291D0B0F1EFCC44A00001DF4 /* PainterView.swift */,
 				291D0B111EFCF8D500001DF4 /* PainterVC.swift */,
+				2924F5201F009CAA007BB7B4 /* testTouchVC.swift */,
+				2924F5221F009DAA007BB7B4 /* TestTouchView.swift */,
 			);
 			path = MyApp08;
 			sourceTree = "<group>";
@@ -91,6 +101,8 @@
 		2918A8C11EFB775F00EACD37 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				2924F5421F00F0AF007BB7B4 /* ball.png */,
+				2924F51E1F009B09007BB7B4 /* apple2.png */,
 				2918A8C21EFB77A600EACD37 /* apple.jpg */,
 			);
 			name = imgs;
@@ -157,7 +169,9 @@
 			files = (
 				2918A8B61EFB4FBF00EACD37 /* LaunchScreen.storyboard in Resources */,
 				2918A8B31EFB4FBF00EACD37 /* Assets.xcassets in Resources */,
+				2924F5431F00F0AF007BB7B4 /* ball.png in Resources */,
 				2918A8C31EFB77A600EACD37 /* apple.jpg in Resources */,
+				2924F51F1F009B09007BB7B4 /* apple2.png in Resources */,
 				2918A8B11EFB4FBF00EACD37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,9 +188,11 @@
 				291D0B101EFCC44A00001DF4 /* PainterView.swift in Sources */,
 				291D0B0E1EFCAF6D00001DF4 /* VC4.swift in Sources */,
 				2918A8BE1EFB711D00EACD37 /* CustomCellViewController.swift in Sources */,
+				2924F5231F009DAA007BB7B4 /* TestTouchView.swift in Sources */,
 				291D0B0A1EFCAF4800001DF4 /* VC2.swift in Sources */,
 				2918A8C01EFB75C400EACD37 /* CustomTableViewCell.swift in Sources */,
 				2918A8AC1EFB4FBF00EACD37 /* AppDelegate.swift in Sources */,
+				2924F5211F009CAA007BB7B4 /* testTouchVC.swift in Sources */,
 				291D0B121EFCF8D500001DF4 /* PainterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
